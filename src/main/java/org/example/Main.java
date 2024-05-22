@@ -1,7 +1,6 @@
 package org.example;
 import java.io.*;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +9,7 @@ public class Main {
             String dirPath = "v" + variant;
             LogFile logFile = new LogFile("v" + variant + ".log");
 
-            Map<Integer, String> textParts = new ConcurrentHashMap<>();
+            Map<Integer, String> textParts = new HashMap<>();
 
             File folder = new File(dirPath);
             File[] files = folder.listFiles();
